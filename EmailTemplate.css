@@ -1,0 +1,130 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+.emails {
+    background-color: gainsboro;
+    height: 50vh;
+    overflow-y: scroll;
+}
+.sender {
+    color: gray;
+    padding: 0;
+}
+.email-body {
+   height: 50vh;  
+   flex-wrap: nowrap;
+}
+.email-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+.email-list {
+    border-radius: 4px;
+    margin: 7px;
+}
+.email-text {
+    font-size: 12px;
+} 
+.email-item {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 4px;
+   
+    
+}
+.msg-subject {
+    display: flex;
+    display: inline;
+    float: left;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: bold;
+}
+.timestamp {
+    display: flex;
+    flex-wrap: nowrap;
+    display: inline;
+    float: right;
+    
+}
+.email-item:hover {
+    background-color: deepskyblue;
+    position: relative;
+    left: 5px;
+    top: 10px;
+    box-shadow: -5px -10px 10px;
+    z-index: 1;
+}
+.greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+.parent-row {
+    display: flex; 
+}
+
+
+
+
+.welcome {
+    background-color: lightslategray;
+    height: 50vh;
+}
+.sidebar {
+     margin-top: 5px;
+}
+.button-mg {
+    margin-top: 2px;
+    margin-right: 5px;
+}
+.search-bar {
+    margin-top: 5px;
+    padding-bottom: 5px;
+    width: 85%;
+}
+
+@media screen and (max-width: 990px) {
+    .welcome {
+        height: calc(60vh - 20px);
+    }
+}
+@media screen and (max-width: 990px) {
+    .emails {
+       height: calc(60vh - 20px);
+        overflow-y: scroll;
+    }
+}
+@media screen and (max-width: 990px) {
+    .email-body {
+        height: calc(40vh - 20px);
+        overflow-y: scroll;
+    }
+}
+@media screen and (max-width: 768px) {
+  
+    .welcome {
+        overflow-y: scroll;
+        height: 30vh;
+    }
+}
+@media screen and (max-width: 768px) {
+   
+    .emails {
+        height: 30vh;
+        overflow-y: scroll;
+    }
+}
+@media screen and (max-width: 768px) {
+  
+    .email-body {
+        height: 40vh;
+        overflow-y: scroll;
+       
+    }
+}
